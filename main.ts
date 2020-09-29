@@ -8,8 +8,8 @@ input.onPinPressed(TouchPin.P0, function () {
 })
 basic.forever(function () {
     if (Ljus == 1) {
-        pins.analogWritePin(AnalogPin.P0, pins.analogReadPin(AnalogPin.P0))
+        pins.analogWritePin(AnalogPin.P2, pins.analogReadPin(AnalogPin.P1))
     } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.P2, 0)
     }
 })
